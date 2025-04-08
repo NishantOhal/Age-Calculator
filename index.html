@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Age Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="/images/Calculator-logo.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/images/Calculator-logo.png" sizes="16x16" type="image/png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="theme-toggle">
+    <label class="switch">
+      <input type="checkbox" id="theme-switch">
+      <span class="slider round"></span>
+    </label>
+    <div class="toggle-label">Dark Mode</div>
+  </div>
+
+  <div class="container">
+    <h1 class="fade-in">🎂 Age Calculator</h1>
+    <label for="dob">Select your Date of Birth</label>
+    <input type="text" id="dob" placeholder="Choose a date" />
+    <button onclick="calculate()">Calculate</button>
+
+    <div id="result" class="fade-in hidden">
+      <p id="age"></p>
+      <p id="countdown"></p>
+      <p id="zodiac"></p>
+    </div>
+  </div>
+
+  <!-- Confetti + Flatpickr JS -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="script.js"></script>
+</body>
+</html>
